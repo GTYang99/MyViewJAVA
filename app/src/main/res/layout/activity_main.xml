@@ -17,19 +17,9 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="295dp"
-        android:layout_height="91dp"
-        android:layout_margin="20dp"
-        android:padding="40dp"
-        android:text="New TextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="208dp" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textView1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
@@ -46,7 +36,6 @@
         android:background="#340000"
 
         />
-
     <EditText
         android:id="@+id/edit_text_id"
         android:layout_width="match_parent"
@@ -59,14 +48,48 @@
         android:text="Enter your ID"
         android:textColor="#5d7bA3"
         android:textStyle="bold"
-        android:textSize="32sp" />
+        android:textSize="32sp"
+
+        app:layout_constraintTop_toBottomOf="@id/textView1"
+
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="295dp"
+        android:layout_height="91dp"
+        android:layout_margin="20dp"
+        android:padding="40dp"
+        android:text="New TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="208dp" />
+
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/myButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello Button"
-        tools:layout_editor_absoluteX="142dp"
-        tools:layout_editor_absoluteY="614dp" />
+        android:layout_margin="40dp"
+        android:clickable="true"
+        android:enabled="true"
+        android:text="Hello This is a Button"
+        tools:layout_editor_absoluteX="113dp"
+        tools:layout_editor_absoluteY="375dp"
+
+        app:layout_constraintTop_toBottomOf="@id/edit_text_id"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/test"
+        android:scaleType="centerCrop"
+        android:contentDescription="This is an image of my first JAVA image view."
+        app:layout_constraintTop_toBottomOf="@+id/myButton"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
