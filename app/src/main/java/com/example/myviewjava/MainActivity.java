@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -41,5 +42,7 @@ public class MainActivity extends AppCompatActivity {
                 // 在這裡處理按鈕點擊事件;
             }
         });
+        ImageView myImage = findViewById(R.id.imageView);
+        myImage.setImageResource(R.drawable.test);
     }
 }
